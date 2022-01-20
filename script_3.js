@@ -223,17 +223,109 @@
 /////////////////////////////////////////////////////////////////////////////
 
 
-const myCountry = {
-    country: 'US',
-    capital: 'DC',
-    language: null,
-    population: 333000000,
-    neighbors: [`Mexico`, `Canada`],
-    describe: function () {
-        return `${this.country} has ${this.population} ${this.language} speaking people, ${this.neighbors.length} neighboring countries, and a capital called ${this.capital}`
-    },
+// const myCountry = {
+//     country: 'US',
+//     capital: 'DC',
+//     language: null,
+//     population: 333000000,
+//     neighbors: [`Mexico`, `Canada`],
+//     describe: function () {
+//         return `${this.country} has ${this.population} ${this.language} speaking people, ${this.neighbors.length} neighboring countries, and a capital called ${this.capital}`
+//     },
 
-}
+// }
 
-console.log(myCountry.describe())
+// console.log(myCountry.describe())
 
+///////////////////////////////////////////////////////////////////////////
+//Coding Challenge 3
+
+// const Mark = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         return (this.mass / (this.height ** 2))
+//     }
+
+// }
+
+// const John = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         return (this.mass / (this.height ** 2))
+//     }
+
+// }
+
+// const highLow = John.calcBMI > Mark.calcBMI ? `higher` : `lower`
+
+// console.log(`John's BMI (${John.calcBMI()}) is ${highLow} than Mark's (${Mark.calcBMI()}).`)
+
+//The for loop
+
+// for (let cap = 1; cap <= 50; cap++) {
+//     console.log(`Voter number ${cap} is currently voting.`)
+// }
+
+
+// //Bring back the array
+// const jonas = [
+//     'Jonas',
+//     'Schmedtmann',
+//     1989,
+//     'teacher',
+//     ['Steve', 'Lexy', 'Sarah'],
+// ]
+
+// //Make blank array to add stuff to later
+// const types = [];
+
+// // //Make for loop iterating over jonas array
+// console.log(jonas[0])
+// for (let i = 0; i < jonas.length; i++) {
+//     //print each item and then it's type
+//     console.log(jonas[i]); //typeof jonas[i]);
+
+//     //Filling in array called types
+//     //types[i] = typeof jonas[i];
+//     //can also do this
+//     types.push(typeof jonas[i]);
+// }
+//console.log(types);
+
+// const years = [1991, 2007, 1989, 2020]
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2022 - years[i]);
+// }
+//console.log(ages)
+
+//continue = skip/exit current iteration
+//break = exit entire loop
+
+
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] == 'number') break;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+//Can sub out break/continue to tell the difference
+
+//Exercise: iterating on an array and incorporating a function
+
+// function percentageOfWorld1(population) {
+//     return ((population / 7753000000) * 100);
+// }
+
+// const populations = [333000000, 1000000000, 59550000, 47350000];
+
+// const percentages2 = [];
+
+// for (let i = 0; i < populations.length; i++) {
+//     percentages2.push(percentageOfWorld1(populations[i]))
+// }
+// console.log(percentages2)
