@@ -308,6 +308,8 @@
 //break = exit entire loop
 
 
+//FOR LOOP ITERATING BY 1
+
 // for (let i = 0; i < jonas.length; i++) {
 //     if (typeof jonas[i] == 'number') break;
 //     console.log(jonas[i], typeof jonas[i]);
@@ -316,6 +318,7 @@
 //Can sub out break/continue to tell the difference
 
 //Exercise: iterating on an array and incorporating a function
+// LECTURE: Looping Arrays, Breaking and Continuing
 
 // function percentageOfWorld1(population) {
 //     return ((population / 7753000000) * 100);
@@ -329,3 +332,80 @@
 //     percentages2.push(percentageOfWorld1(populations[i]))
 // }
 // console.log(percentages2)
+
+// From Lecture:
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end');
+// }
+
+// Exercise:  Looping Backwards and Loops in Loops
+
+
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+//     'Russia']];
+
+
+
+// for (let neigh = 0; neigh < listOfNeighbours.length; neigh++) {
+//     for (let part = 0; part < listOfNeighbours[neigh].length; part++) {
+//         console.log(`Neighboring country: ${listOfNeighbours[neigh][part]}`);
+//     }
+// }
+
+
+//The While Loop Exercise
+
+// function percentageOfWorld1(population) {
+//     return ((population / 7753000000) * 100);
+// }
+
+// const populations = [333000000, 1000000000, 59550000, 47350000];
+
+
+// const percentages3 = [];
+
+// let i = 0
+// while (i < populations.length) {
+//     percentages3.push(percentageOfWorld1(populations[i]));
+//     i++;
+// }
+// console.log(percentages3)
+
+//Coding Challenge 4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
+]
+
+let tips = []
+let totals = []
+
+let calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+let i = 0
+while (i < bills.length) {
+    tips.push(calcTip(bills[i]));
+    totals.push(calcTip(bills[i]) + bills[i]);
+    i++;
+}
+console.log(tips)
+console.log(totals)
+//////////////////////////////////
+//Bonus
+// const calcAverage = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         //sum = arr[i] + sum;
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+// console.log(calcAverage(totals))
+
+//YAY DONE WITH THIS SECTION!
